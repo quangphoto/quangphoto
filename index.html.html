@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Quảng Photographer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #1e1e2f;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .intro p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .highlight {
+      color: #00ffd5;
+      font-weight: bold;
+    }
+
+    .qr {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .qr img {
+      width: 180px;
+      height: 180px;
+      border: 4px solid #00ffcc;
+      border-radius: 12px;
+    }
+
+    .gallery {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #00ffd5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00c6ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .intro {
+        padding: 20px;
+      }
+
+      .qr img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Quảng Photographer 📸</h1>
+  </header>
+
+  <section class="intro">
+    <p><span class="highlight">Họ tên:</span> Lường Duy Quảng</p>
+    <p><span class="highlight">Số tài khoản:</span> 1036282609</p>
+    <p><span class="highlight">Ngân hàng:</span> Vietcombank</p>
+    <p><span class="highlight">Chủ tài khoản:</span> LUONG DUY QUANG</p>
+
+    <div class="qr">
+      <img src="qr.png" alt="QR Code chuyển khoản">
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Bộ sưu tập ảnh nổi bật</h2>
+    <div class="grid">
+      <img src="photo1.jpg" alt="Ảnh 1">
+      <img src="photo2.jpg" alt="Ảnh 2">
+      <img src="photo3.jpg" alt="Ảnh 3">
+      <img src="photo4.jpg" alt="Ảnh 4">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Quảng - Nhiếp ảnh gia. Website được thiết kế bởi chính tôi ✨
+  </footer>
+
+</body>
+</html>
